@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machou Fitness</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body, html{
+height:100%;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-bg{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+overflow:hidden;
+
+}
+
+.video-bg video{
+
+min-width:100%;
+min-height:100%;
+object-fit:cover;
+
+}
+
+/* CENTER CONTENT */
+
+.content{
+
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+background:rgba(0,0,0,0.4);
+
+}
+
+.logo{
+
+font-size:40px;
+font-weight:bold;
+margin-bottom:20px;
+
+}
+
+/* BUTTON */
+
+.join-btn{
+
+padding:15px 40px;
+font-size:20px;
+border:none;
+background:red;
+color:white;
+cursor:pointer;
+border-radius:30px;
+transition:0.3s;
+
+}
+
+.join-btn:hover{
+
+background:white;
+color:red;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="video-bg">
+
+<video autoplay muted loop>
+
+<source src="teste video 1.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+<div class="content">
+
+<div class="logo">MACHOU FITNESS</div>
+
+<button class="join-btn"
+onclick="location.href='join.html'">
+
+JOIN US
+
+</button>
+
+</div>
+
+</body>
+</html>
