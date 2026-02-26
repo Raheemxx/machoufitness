@@ -116,7 +116,34 @@ object-fit:cover;
 
 }
 
-</style>
+</style
+  .promo{
+position:fixed;
+top:80px;
+right:100px;
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+font-size:22px;
+font-weight:bold;
+direction:rtl;
+animation:float 2s ease-in-out infinite;
+z-index:10;
+}
+
+.arrow{
+font-size:28px;
+transform:rotate(-45deg);
+color:red;
+}
+
+/* floating animation */
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0px);}
+}>
 
 </head>
 
@@ -176,6 +203,10 @@ object-fit:cover;
 </div>
 
 </div>
-
+<div class="promo">
+    <span class="promo-text">يالاه البطل/بطلة ! تريني معانا</span>
+    <span class="arrow">➜</span>
+</div>
 </body>
+
 </html>
