@@ -21,18 +21,6 @@ height:100%;
 /* VIDEO BACKGROUND */
 
 .video-bg{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index:-1;
-overflow:hidden;
-
-}
-
-.video-bg{
 position:fixed;
 top:0;
 left:0;
@@ -43,11 +31,14 @@ display:flex;
 justify-content:center;
 align-items:center;
 background:black;
+overflow:visible; /* change this */
 }
 
 .video-bg video{
 max-width:100%;
 max-height:100%;
+width:auto;
+height:auto;
 object-fit:contain;
 }
 
@@ -128,3 +119,4 @@ JOIN US
 </body>
 
 </html>
+
