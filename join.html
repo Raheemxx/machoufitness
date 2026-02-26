@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Join Machou Fitness</title>
 
 <style>
@@ -21,13 +19,8 @@ height:100vh;
 background:url("WhatsApp Image 2026-02-25 at 1.57.38 PM.jpeg");
 background-size:cover;
 background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
 overflow:hidden;
 }
-
-/* DARK OVERLAY */
 
 .overlay{
 background:linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9));
@@ -36,7 +29,7 @@ height:100%;
 position:relative;
 }
 
-/* ================= COACH ================= */
+/* COACH */
 
 .coach{
 position:absolute;
@@ -47,13 +40,7 @@ height:95px;
 border-radius:50%;
 overflow:hidden;
 border:3px solid white;
-cursor:pointer;
 animation:pulse 2s infinite;
-transition:0.3s;
-}
-
-.coach:hover{
-transform:scale(1.1);
 }
 
 .coach img{
@@ -62,18 +49,10 @@ height:100%;
 object-fit:cover;
 }
 
-/* Pulse Glow */
-
 @keyframes pulse{
-0%{
-box-shadow:0 0 0 0 rgba(0,255,0,0.7);
-}
-70%{
-box-shadow:0 0 0 15px rgba(0,255,0,0);
-}
-100%{
-box-shadow:0 0 0 0 rgba(0,255,0,0);
-}
+0%{box-shadow:0 0 0 0 rgba(0,255,0,0.7);}
+70%{box-shadow:0 0 0 15px rgba(0,255,0,0);}
+100%{box-shadow:0 0 0 0 rgba(0,255,0,0);}
 }
 
 /* ONLINE DOT */
@@ -95,7 +74,7 @@ animation:blink 1.5s infinite;
 50%{opacity:0.4;}
 }
 
-/* ================= PROMO TEXT ================= */
+/* PROMO */
 
 .promo{
 position:absolute;
@@ -107,17 +86,11 @@ max-width:600px;
 }
 
 .promo-text{
-font-size:60px;
+font-size:55px;
 font-weight:900;
 line-height:1.2;
-letter-spacing:1px;
-text-shadow:
-0 0 10px #ff0000,
-0 0 30px #ff0000;
-transform:skewX(-5deg);
+text-shadow:0 0 30px red;
 }
-
-/* DIAGONAL ARROW */
 
 .arrow{
 position:absolute;
@@ -128,24 +101,13 @@ animation:moveArrow 1s linear infinite;
 transform:rotate(-35deg);
 }
 
-/* Arrow running animation */
-
 @keyframes moveArrow{
-0%{
-transform:translate(0,0) rotate(-35deg);
-opacity:1;
-}
-50%{
-transform:translate(25px,-15px) rotate(-35deg);
-opacity:0.6;
-}
-100%{
-transform:translate(0,0) rotate(-35deg);
-opacity:1;
-}
+0%{transform:translate(0,0) rotate(-35deg);}
+50%{transform:translate(25px,-15px) rotate(-35deg);}
+100%{transform:translate(0,0) rotate(-35deg);}
 }
 
-/* ================= SOCIAL ICONS ================= */
+/* ICONS */
 
 .icons{
 position:absolute;
@@ -164,7 +126,6 @@ background:white;
 display:flex;
 justify-content:center;
 align-items:center;
-cursor:pointer;
 transition:0.3s;
 }
 
@@ -172,54 +133,39 @@ transition:0.3s;
 transform:scale(1.2);
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+/* MOBILE */
 
 @media(max-width:768px){
-
-.promo{
-top:55%;
-left:5%;
-}
-
 .promo-text{
-font-size:36px;
+font-size:34px;
 }
-
 .arrow{
 right:-80px;
 font-size:35px;
 }
-
 .coach{
 width:75px;
 height:75px;
 }
-
 .icon{
 width:55px;
 height:55px;
 }
-
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="overlay">
 
-<!-- COACH -->
-
 <a href="https://wa.me/212699078410">
 <div class="coach">
-<img src="coach.JPG" alt="Coach">
+<img src="coach.JPG">
 <div class="online-dot"></div>
 </div>
 </a>
-
-<!-- PROMO -->
 
 <div class="promo">
 <div class="promo-text">
@@ -228,8 +174,6 @@ height:55px;
 </div>
 <div class="arrow">➜➜➜</div>
 </div>
-
-<!-- SOCIAL ICONS -->
 
 <div class="icons">
 
