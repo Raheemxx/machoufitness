@@ -14,8 +14,9 @@ box-sizing:border-box;
 font-family:Arial, sans-serif;
 }
 
-body, html{
+html, body{
 height:100%;
+overflow:hidden;
 }
 
 /* VIDEO BACKGROUND */
@@ -31,44 +32,40 @@ display:flex;
 justify-content:center;
 align-items:center;
 background:black;
-overflow:visible; /* change this */
 }
 
 .video-bg video{
 max-width:100%;
 max-height:100%;
-width:auto;
-height:auto;
 object-fit:contain;
 }
 
-/* CENTER CONTENT */
+/* DARK OVERLAY */
 
 .content{
-
-height:100%;
+position:relative;
+height:100vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 color:white;
 text-align:center;
-background:rgba(0,0,0,0.4);
-
+background:rgba(0,0,0,0.5);
 }
 
-.logo{
+/* LOGO */
 
+.logo{
 font-size:40px;
 font-weight:bold;
 margin-bottom:20px;
-
+letter-spacing:2px;
 }
 
 /* BUTTON */
 
 .join-btn{
-
 padding:15px 40px;
 font-size:20px;
 border:none;
@@ -76,15 +73,12 @@ background:red;
 color:white;
 cursor:pointer;
 border-radius:30px;
-transition:0.3s;
-
+transition:0.3s ease;
 }
 
 .join-btn:hover{
-
 background:white;
 color:red;
-
 }
 
 </style>
@@ -94,29 +88,18 @@ color:red;
 <body>
 
 <div class="video-bg">
-
-<video autoplay muted loop>
-
+<video autoplay muted loop playsinline>
 <source src="teste video 1.mp4" type="video/mp4">
-
 </video>
-
 </div>
 
 <div class="content">
-
 <div class="logo">MACHOU FITNESS</div>
 
-<button class="join-btn"
-onclick="location.href='join.html'">
-
+<button class="join-btn" onclick="location.href='join.html'">
 JOIN US
-
 </button>
-
 </div>
 
 </body>
-
 </html>
-
